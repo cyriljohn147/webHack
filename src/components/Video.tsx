@@ -9,7 +9,7 @@ interface VideoProps {
 export function Video({ videoId }: Readonly<VideoProps>) {
   const [playVideo, setPlayVideo] = useState(false);
 
-  if (!videoId) return null;
+  // if (!videoId) return null;
 
   return (
     <Container>
@@ -36,7 +36,7 @@ export function Video({ videoId }: Readonly<VideoProps>) {
         )}
         {playVideo && (
           <iframe
-            src={`https://www.youtube-nocookie.com/embed/${videoId}?controls=0&autoplay=1`}
+            src={videoId}
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             className="w-full h-full aspect-video"
