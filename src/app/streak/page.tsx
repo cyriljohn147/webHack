@@ -11,7 +11,9 @@ import Fire from "@/components/Fire";
 export default function Streak() {
   return (
     <Container className="flex flex-wrap">
-      <div className="w-1/2"></div>
+      <div className="w-1/2">
+      <img src="treeSapling.svg"></img>
+      </div>
       <div className="w-1/2">
         <div className="streak flex flex-col justify-center items-center my-4">
           <div className="container w-fit pb-4">

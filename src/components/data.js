@@ -48,6 +48,11 @@ const benefitTwo = {
       desc: "Access videos, mindfulness exercises, success stories, quizzes on smoking and health, and physical activities.",
       icon: <ArrowTrendingUpIcon />,
     },
+    // {
+    //   title: "Life  Calculator",
+    //   desc: "",
+    //   icon: ,
+    // }
   ],
 };
 
@@ -205,41 +210,41 @@ const quizData={
 }
 
 const results={
-  "Results" : [
+  "Results": [
     {
       "title": "Stage 1: Considering Quitting",
       "message": [
-        "It looks like you're just starting to learn about the risks of smoking. Keep exploring the resources we offer to understand why quitting is so important for your health.",
-        "Great job! You have a good understanding of the immediate benefits and common reasons to quit smoking. Keep building on this knowledge to strengthen your commitment to quit.",
-        "Excellent! You have a solid grasp of the health risks and benefits of quitting smoking. You're well-prepared to take the next steps toward a smoke-free life."
+        "You're starting to learn about the risks of smoking. Keep exploring why quitting is important.",
+        "You understand the immediate benefits and common reasons to quit. Keep building on this knowledge.",
+        "You grasp the health risks and benefits of quitting. You're ready to take steps toward a smoke-free life."
       ]
     },
     {
       "title": "Stage 2: Actively Quitting",
       "message": [
-        "It seems you're finding it challenging to manage cravings and stay motivated. Consider using more of our strategies and support resources to help you through this stage.",
-        "Good work! You're using effective strategies to handle cravings and stay active. Keep utilizing the support systems available to you to enhance your quitting journey.",
-        "Fantastic! You have a strong strategy for managing cravings and staying motivated. Continue to apply these methods and reach out for support whenever needed."
+        "Managing cravings and staying motivated can be challenging. Use our strategies and support resources.",
+        "You're effectively handling cravings and staying active. Keep using available support to enhance your journey.",
+        "You have a strong strategy for managing cravings and motivation. Keep applying these methods and seeking support."
       ]
     },
     {
       "title": "Stage 3: Recently Quit",
       "message": [
-        "The early days can be tough, but don't get discouraged. Focus on the resources we offer to manage withdrawal symptoms and maintain your motivation.",
-        "You're doing well in understanding how to handle withdrawal symptoms and stay motivated. Keep setting new health goals and celebrating your progress.",
-        "Excellent job! You have a good understanding of managing withdrawal and staying motivated. Keep up the great work and enjoy the health benefits of being smoke-free."
+        "Early days can be tough. Focus on managing withdrawal symptoms and staying motivated.",
+        "You understand handling withdrawal symptoms and staying motivated. Set new health goals and celebrate progress.",
+        "You manage withdrawal well and stay motivated. Enjoy the health benefits of being smoke-free."
       ]
     },
     {
       "title": "Stage 4: Long-Term Maintenance",
       "message": [
-        "Long-term maintenance can be challenging. Focus on identifying triggers and seeking support to stay on track. Remember, setbacks are part of the journey.",
-        "You're on the right path to maintaining your smoke-free life. Keep identifying triggers and celebrating your milestones to stay motivated.",
-        "You're doing an amazing job maintaining your smoke-free life! Continue to celebrate your milestones and use what you've learned to prevent relapse."
+        "Maintaining a smoke-free life can be challenging. Focus on identifying triggers and seeking support.",
+        "You're maintaining your smoke-free life well. Identify triggers and celebrate milestones.",
+        "You're doing an amazing job! Celebrate milestones and use what you've learned to prevent relapse."
       ]
     }
-    
   ]
+
 }
 
 export { benefitOne, benefitTwo ,quizData, results};

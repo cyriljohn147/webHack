@@ -25,15 +25,13 @@ export default function Home() {
       <Benefits imgPos="right" data={benefitTwo} />
 
       <SectionTitle
-        preTitle="Watch a video"
-        title="Learn how to fullfil your needs"
+        preTitle="By World Health Organaization"
+        title="Commit To Quit Smoking"
       >
-        This section is to highlight a promo or demo video of your product.
-        Analysts says a landing page with video has 3% more conversion rate. So,
-        don&apos;t forget to add one. Just like this.
+        Quitting tobacco and related products is hard, but with the right support and tools you can do it! You are losing a lot more than you think by using tobacco - your health, the health of your family and loved ones, the money your spending, your looks, and so much more. Quitters are truly winners.
       </SectionTitle>
 
-      <Video videoSrc="/videos/Diaphragmaticbreathing.mp4" />
+      <Video videoSrc="videos/Commit to quit tobacco.mp4" />
 
       {/* <SectionTitle
         preTitle="Testimonials"
