@@ -2,39 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
+:root {
   --main-bg: #16a34a;
 }
 
 @layer base {
+
   html,
   body {
     @apply dark:bg-trueGray-900;
   }
 }
 
-.smoke{
+.smoke {
   width: 100vw;
   height: 100vh;
 }
 
-.MuiDateRangeCalendar-root
-div[style*="position:absolute"] {
+.MuiDateRangeCalendar-root div[style*="position: absolute"] {
   display: none !important;
 }
 
-.bg-green{
+.bg-green {
   background-color: var(--main-bg);
 }
 
-
-.MuiDateRangeCalendar-root{
+.MuiDateRangeCalendar-root {
   display: flex;
   justify-content: center;
   height: 50%;
-}
-
-.streak{
-height: 30vh;
-border-radius: 25px;
 }
