@@ -33,7 +33,7 @@ const benefitOne = {
 };
 
 const benefitTwo = {
-  title: "GreenLungs: Empowering a Smoke-Free Journey",
+  title: "Empowering a Smoke-Free Journey",
   desc: "Our website is committed to helping individuals quit smoking and embark on healthier lifestyles. Through a combination of innovative features and supportive resources, we aim to empower users in their journey towards a smoke-free life.",
   image: benefitTwoImg,
   bullets: [
