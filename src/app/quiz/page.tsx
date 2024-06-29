@@ -7,7 +7,11 @@ import { quizData } from "@/components/data";
 
 function App() {
   const quizzes: Quizzes = quizData.quizzes;
-  const [data, setQuizData] = useState<Quiz>(quizData.quizzes[0]);
+  const [data, setQuizData] = useState<Quiz>({
+    title: "Healthy lifestyle is a choice!",
+    icon: "/",
+    iconbg: "#16a34a",
+  });
 
   return (
     <>
