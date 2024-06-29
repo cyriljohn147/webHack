@@ -242,4 +242,4 @@ const results={
   ]
 }
 
-export { benefitOne, benefitTwo ,quizData};
+export { benefitOne, benefitTwo ,quizData, results};

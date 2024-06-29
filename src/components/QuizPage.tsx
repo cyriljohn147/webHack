@@ -67,9 +67,9 @@ const QuizPage = ({ quizData }: QuizPageProps) => {
                 {currentQuestion?.question}
               </h2>
             </div>
-            <div className="mt-6 flex h-4 w-full items-center justify-start rounded-full bg-white px-1 dark:bg-navy xl:w-[465px]">
+            <div className="mt-6 flex h-4 w-full items-center justify-start rounded-full bg-slate-200 px-1 dark:bg-navy xl:w-[465px]">
               <span
-                className="h-2 rounded-[104px] bg-purple"
+                className="h-2 rounded-[104px] bg-green-600"
                 style={{ width: `${progressBar}%` }}
               ></span>
             </div>
@@ -82,14 +82,14 @@ const QuizPage = ({ quizData }: QuizPageProps) => {
                 const isCorrect = currentQuestion?.answer === option;
                 const bgColor = isSelected
                   ? isCorrect
-                    ? "text-white bg-green"
-                    : "bg-red text-white"
-                  : "bg-lightGrey text-darkNavy";
+                    ? "text-white bg-green-600"
+                    : "bg-red-500 text-white"
+                  : "bg-lightGrey-500 text-darkNavy";
                 const borderColor =
                   isSelected && isSubmitted
                     ? isCorrect
-                      ? "border-green dark:border-green"
-                      : "border-red dark:border-red"
+                      ? "border-green-600 dark:border-green"
+                      : "border-red-500 dark:border-red"
                     : "border-white dark:border-navy";
                 return (
                   <li
@@ -99,7 +99,7 @@ const QuizPage = ({ quizData }: QuizPageProps) => {
                         ? `min-h-14 sm:min-h-20 pointer-events-none flex h-auto w-full items-center justify-between gap-4 rounded-xl border-[3px] bg-white p-3 font-medium drop-shadow-sm dark:border-navy dark:bg-navy dark:text-white sm:rounded-3xl xl:min-h-[92px] xl:w-[564px] ${borderColor}`
                         : `min-h-14 sm:min-h-20 group flex h-auto w-full cursor-pointer items-center gap-4 rounded-xl border-[3px] bg-white p-3 font-medium drop-shadow-sm dark:border-navy dark:bg-navy dark:text-white sm:rounded-3xl xl:min-h-[92px] xl:w-[564px] ${
                             isSelected
-                              ? "border-purple dark:border-purple"
+                              ? "border-green-600 dark:border-purple"
                               : "border-white dark:border-navy"
                           }`
                     }
