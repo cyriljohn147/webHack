@@ -25,13 +25,13 @@ export default function Streak() {
               </p>
             </div>
             <div className="flex gap-x-2">
-              <CheckMark day="M" />
-              <CheckMark day="T" />
-              <CheckMark day="W" />
-              <CheckMark day="T" />
-              <CheckMark day="F" />
-              <CheckMark day="S" />
-              <CheckMark day="S" />
+              <CheckMark day="M" type="done" />
+              <CheckMark day="T" type="done" />
+              <CheckMark day="W" type="done" />
+              <CheckMark day="T" type="missed" />
+              <CheckMark day="F" type="done" />
+              <CheckMark day="S" type="tbd" />
+              <CheckMark day="S" type="tbd" />
             </div>
           </div>
         </div>
