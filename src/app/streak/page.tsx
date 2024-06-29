@@ -11,15 +11,13 @@ export default function Streak() {
     <Container className="flex flex-wrap">
       <div className="w-1/2"></div>
       <div className="w-1/2">
-        <div className=" bg-green">
+        <div className="streak bg-green">
           <p>daily streak</p>
         </div>
         <div>
           <LocalizationProvider dateAdapter={AdapterDayjs}>
-            <DemoContainer
-              components={["DateRangeCalendar", "DateRangeCalendar"]}
-            >
-              <DemoItem label="Your Streak">
+            <DemoContainer components={["DateRangeCalendar"]}>
+              <DemoItem>
                 <DateRangeCalendar
                   defaultValue={[dayjs("2022-04-17"), dayjs("2022-04-21")]}
                   readOnly
