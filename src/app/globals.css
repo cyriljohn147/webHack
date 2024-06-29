@@ -19,7 +19,7 @@
 }
 
 .MuiDateRangeCalendar-root
-div[style*="position:absolute"] {
+div[style*="position: absolute"] {
   display: none !important;
 }
 
