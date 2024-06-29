@@ -24,7 +24,7 @@ export function Footer() {
                   height="64"
                   className="w-16"
                 />
-                <span>Nextly</span>
+                <span>GreenLungs</span>
               </Link>
             </div>
 

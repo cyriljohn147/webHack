@@ -33,7 +33,7 @@ export default function Home() {
         don&apos;t forget to add one. Just like this.
       </SectionTitle>
 
-      <Video videoSrc="/videos/Diaphragmaticbreathing.mp4" />
+      <Video videoSrc="videos/Commit to quit tobacco.mp4" />
 
       {/* <SectionTitle
         preTitle="Testimonials"
