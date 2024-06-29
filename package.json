@@ -9,6 +9,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "db:test": "tsx watch backend/main.ts",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "tsx backend/drizzle/migrate.ts"
   },
