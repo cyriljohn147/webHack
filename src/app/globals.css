@@ -32,3 +32,27 @@
   justify-content: center;
   height: 50%;
 }
+
+.css-grqin-MuiButtonBase-root-MuiPickersDay-root-MuiDateRangePickerDay-day.Mui-selected {
+  background-color: var(--main-bg);
+}
+
+.css-1ny3jyh-MuiDateRangePickerDay-root {
+  background-color: rgb(220 252 231);
+}
+
+.css-1jt0kfk-MuiDateRangePickerDay-root {
+  background-color: rgb(220 252 231);
+}
+
+.css-f8wito-MuiDateRangePickerDay-root {
+  background-color: rgb(220 252 231);
+}
+
+.css-grqin-MuiButtonBase-root-MuiPickersDay-root-MuiDateRangePickerDay-day:focus {
+  background-color: rgba(220, 252, 231, 0.6);
+}
+
+.css-grqin-MuiButtonBase-root-MuiPickersDay-root-MuiDateRangePickerDay-day.Mui-selected:hover {
+  background-color: rgb(21 128 61);
+}
