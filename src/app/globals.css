@@ -26,3 +26,15 @@ div[style*="position:absolute"] {
 .bg-green{
   background-color: var(--main-bg);
 }
+
+
+.MuiDateRangeCalendar-root{
+  display: flex;
+  justify-content: center;
+  height: 50%;
+}
+
+.streak{
+height: 30vh;
+border-radius: 25px;
+}
