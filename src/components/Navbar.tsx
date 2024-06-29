@@ -70,7 +70,7 @@ export const Navbar = () => {
                       href="/"
                       className="w-full px-6 py-2 mt-3 text-center text-white bg-green-600 rounded-md lg:ml-5"
                     >
-                      Get Started
+                      Get Started!
                     </Link>
                   </>
                 </Disclosure.Panel>
