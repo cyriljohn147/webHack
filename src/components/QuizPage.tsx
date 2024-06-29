@@ -55,6 +55,7 @@ const QuizPage = ({ quizData }: QuizPageProps) => {
           icon={quizData.icon}
           iconbg={quizData.iconbg}
           numberOfQuestions={numberOfQuestions}
+          quiz={quizData}
         />
       ) : (
         <section className="mt-8 px-6 sm:px-16 xl:flex xl:w-full xl:px-0">

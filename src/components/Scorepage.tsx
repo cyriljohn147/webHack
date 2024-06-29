@@ -1,3 +1,4 @@
+import { Quiz } from "@/types";
 import { results } from "./data";
 
 type ScorePageProps = {
@@ -6,6 +7,7 @@ type ScorePageProps = {
   icon: string;
   iconbg: string;
   numberOfQuestions: number;
+  quiz: Quiz;
 };
 
 const ScorePage = ({
@@ -14,6 +16,7 @@ const ScorePage = ({
   iconbg,
   score,
   numberOfQuestions,
+  quiz,
 }: ScorePageProps) => {
   return (
     <div className="flex flex-col">
@@ -58,7 +61,12 @@ const ScorePage = ({
         </div>
       </section>
       <section className="p-5">
-        <p className="text-center italic">"{results.Results[0].message}"</p>
+        <p className="text-center italic">{results.Results.map((res,index)=>{
+          if(res.title === quiz.title){
+            return <p key={index}>{res.message[score ===  0 ? 0 :
+               score-1]}</p>;
+          }
+        })}</p>
       </section>
     </div>
   );
