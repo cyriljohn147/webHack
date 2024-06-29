@@ -13,12 +13,12 @@ export default function Home() {
     <Container>
       <Hero />
       <SectionTitle
-        preTitle="Nextly Benefits"
-        title=" Why should you use this landing page"
+        preTitle="GreenLungs Benefits"
+        title=" Why Use GreenLungs"
       >
-        Nextly is a free landing page & marketing website template for startups
-        and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
+        GreenLungs is designed to support and empower you on your journey to quit smoking. 
+        Our website offers a unique, engaging experience that combines a reward-based system with comprehensive educational resources.
+        GreenLungs makes quitting smoking not only achievable but also enjoyable and rewarding, helping you to lead a healthier, smoke-free life. 
       </SectionTitle>
 
       <Benefits data={benefitOne} />
@@ -33,7 +33,7 @@ export default function Home() {
         don&apos;t forget to add one. Just like this.
       </SectionTitle>
 
-      <Video videoId="https://www.youtube.com/watch?v=jGDKh-I1C54" />
+      <Video videoSrc="/videos/Diaphragmaticbreathing.mp4" />
 
       {/* <SectionTitle
         preTitle="Testimonials"
