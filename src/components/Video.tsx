@@ -3,10 +3,10 @@ import { useState } from "react";
 import { Container } from "@/components/Container";
 
 interface VideoProps {
-  videoId: string;
+  videoSrc: string;
 }
 
-export function Video({ videoId }: Readonly<VideoProps>) {
+export function Video({ videoSrc }: Readonly<VideoProps>) {
   const [playVideo, setPlayVideo] = useState(false);
 
   // if (!videoId) return null;
@@ -35,12 +35,14 @@ export function Video({ videoId }: Readonly<VideoProps>) {
           </button>
         )}
         {playVideo && (
-          <iframe
-            src={videoId}
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            className="w-full h-full aspect-video"
-          ></iframe>
+          <video
+          controls
+          className="w-full h-full aspect-video"
+          >
+          <source src={videoSrc} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
         )}
       </div>
     </Container>
