@@ -2,9 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --main-bg: #3ca34d;
+}
+
 @layer base {
   html,
   body {
     @apply dark:bg-trueGray-900;
   }
+}
+
+.bg-green{
+  background-color: var(--main-bg)  !important;
 }

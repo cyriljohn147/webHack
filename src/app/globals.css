@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+:root{
+  --main-bg: #16a34a;
+}
 
 @layer base {
   html,
@@ -11,3 +13,16 @@
   }
 }
 
+.smoke{
+  width: 100vw;
+  height: 100vh;
+}
+
+.MuiDateRangeCalendar-root
+div[style*="position:absolute"] {
+  display: none !important;
+}
+
+.bg-green{
+  background-color: var(--main-bg);
+}
