@@ -1,57 +1,51 @@
 import {
-  FaceSmileIcon,
-  ChartBarSquareIcon,
-  CursorArrowRaysIcon,
-  DevicePhoneMobileIcon,
-  AdjustmentsHorizontalIcon,
-  SunIcon,
+  ArrowTrendingUpIcon,
+  GiftIcon,
+  CurrencyRupeeIcon,
+  ArrowTrendingDownIcon,
+  HeartIcon,
 } from "@heroicons/react/24/solid";
 
 import benefitOneImg from "../../public/img/benefit-one.svg";
 import benefitTwoImg from "../../public/img/benefit-two.svg";
 
 const benefitOne = {
-  title: "Highlight your benefits",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
+  title: "The Hidden Costs Of Smoking [Disadvantages]",
+  desc: "Smoking risks health for smokers and non-smokers alike, leading to preventable illness and premature death globally. It causes lung cancer, heart disease, stroke, and COPD, reduces lung capacity, increases infections, and strains finances with ongoing costs.",
   image: benefitOneImg,
   bullets: [
     {
-      title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
-      icon: <FaceSmileIcon />,
+      title: "Health Risks",
+      desc: "Smoking is linked to lung cancer, heart disease, stroke, and COPD.",
+      icon: <HeartIcon />
     },
     {
-      title: "Improve acquisition",
-      desc: "Here you can add the next benefit point.",
-      icon: <ChartBarSquareIcon />,
+      title: "Reduced Quality of Life",
+      desc: "Smokers often face reduced lung capacity and frequent respiratory infections.",
+      icon: <ArrowTrendingDownIcon />,
     },
     {
-      title: "Drive customer retention",
-      desc: "This will be your last bullet point in this section.",
-      icon: <CursorArrowRaysIcon />,
+      title: "Financial Cost",
+      desc: "The cost of buying cigarettes adds up, creating a substantial financial burden over time.",
+      icon: <CurrencyRupeeIcon />
     },
   ],
 };
 
 const benefitTwo = {
-  title: "Offer more benefits here",
-  desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
+  title: "GreenLungs: Empowering a Smoke-Free Journey",
+  desc: "Our website is committed to helping individuals quit smoking and embark on healthier lifestyles. Through a combination of innovative features and supportive resources, we aim to empower users in their journey towards a smoke-free life.",
   image: benefitTwoImg,
   bullets: [
     {
-      title: "Mobile Responsive Template",
-      desc: "Nextly is designed as a mobile first responsive template.",
-      icon: <DevicePhoneMobileIcon />,
+      title: "Reward-Based System",
+      desc: "Grow a virtual tree daily by reporting smoke-free progress.",
+      icon: <GiftIcon />,
     },
     {
-      title: "Powered by Next.js & TailwindCSS",
-      desc: "This template is powered by latest technologies and tools.",
-      icon: <AdjustmentsHorizontalIcon />,
-    },
-    {
-      title: "Dark & Light Mode",
-      desc: "Nextly comes with a zero-config light & dark mode. ",
-      icon: <SunIcon />,
+      title: "Educational Resources",
+      desc: "Access videos, mindfulness exercises, success stories, quizzes on smoking and health, and physical activities.",
+      icon: <ArrowTrendingUpIcon />,
     },
   ],
 };

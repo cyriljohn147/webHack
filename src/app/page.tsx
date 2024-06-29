@@ -35,7 +35,7 @@ export default function Home() {
 
       <Video videoId="fZ0D0cnR88E" />
 
-      <SectionTitle
+      {/* <SectionTitle
         preTitle="Testimonials"
         title="Here's what our customers said"
       >
@@ -51,7 +51,7 @@ export default function Home() {
       </SectionTitle>
 
       <Faq />
-      <Cta />
+      <Cta /> */}
     </Container>
   );
 }
