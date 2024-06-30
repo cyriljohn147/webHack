@@ -29,7 +29,7 @@ export const Exercise = (props: Readonly<ExerciseProps>) => {
         >
           <div className={`w-full lg:w-1/2 flex justify-center items-center`}>
             <div>
-              <Video videoSrc="videos/Committoquit.mp4" />
+              <Video videoSrc={item.videoUrl} />
             </div>
           </div>
           <div
