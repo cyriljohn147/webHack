@@ -13,3 +13,7 @@ export type Quiz = {
 };
 
 export type Quizzes = Quiz[];
+
+export type Exercise = {
+  title : string;
+}

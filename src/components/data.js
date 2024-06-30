@@ -268,4 +268,81 @@ const results = {
 
 
 
-export { benefitOne, benefitTwo ,quizData, results};
+const exerciseData = {
+  techniques: [
+    {
+      imgPos: "left",
+      title: "Breathing Technique 1",
+      desc: "Description of Breathing Technique 1.",
+      videoUrl: "videos/Committoquit.mp4",
+      steps: [
+        {
+          title: "Step 1",
+          desc: "Description of step 1.",
+          icon: <ArrowTrendingUpIcon />, // Replace with your icon
+        },
+        {
+          title: "Step 2",
+          desc: "Description of step 2.",
+          icon: <ArrowTrendingUpIcon /> // Replace with your icon
+        },
+      ],
+    },
+    {
+      imgPos: "right",
+      title: "Breathing Technique 2",
+      desc: "Description of Breathing Technique 2.",
+      videoUrl: "videos/Committoquit.mp4",
+      steps: [
+        {
+          title: "Step 1",
+          desc: "Description of step 1.",
+          icon: <ArrowTrendingUpIcon />, // Replace with your icon
+        },
+        {
+          title: "Step 2",
+          desc: "Description of step 2.",
+          icon: <ArrowTrendingUpIcon />, // Replace with your icon
+        },
+      ],
+    },
+    {
+      imgPos: "left",
+      title: "Breathing Technique 3",
+      desc: "Description of Breathing Technique 3.",
+      videoUrl: "videos/Committoquit.mp4",
+      steps: [
+        {
+          title: "Step 1",
+          desc: "Description of step 1.",
+          icon: <ArrowTrendingUpIcon />, // Replace with your icon
+        },
+        {
+          title: "Step 2",
+          desc: "Description of step 2.",
+          icon: <ArrowTrendingUpIcon />, // Replace with your icon
+        },
+      ],
+    },
+    {
+      imgPos: "right",
+      title: "Breathing Technique 4",
+      desc: "Description of Breathing Technique 4.",
+      videoUrl: "videos/Committoquit.mp4",
+      steps: [
+        {
+          title: "Step 1",
+          desc: "Description of step 1.",
+          icon: <ArrowTrendingUpIcon />, // Replace with your icon
+        },
+        {
+          title: "Step 2",
+          desc: "Description of step 2.",
+          icon: <ArrowTrendingUpIcon />, // Replace with your icon
+        },
+      ],
+    },
+  ],
+};
+
+export { benefitOne, benefitTwo ,quizData, results,exerciseData};
