@@ -272,22 +272,32 @@ const exerciseData = {
   techniques: [
     {
       imgPos: "left",
-      title: "Breathing Technique 1",
-      desc: "Description of Breathing Technique 1.",
-      videoUrl: "videos/Committoquit.mp4",
-      steps: [
-        {
-          title: "Step 1",
-          desc: "Description of step 1.",
-          icon: <ArrowTrendingUpIcon />, // Replace with your icon
-        },
-        {
-          title: "Step 2",
-          desc: "Description of step 2.",
-          icon: <ArrowTrendingUpIcon /> // Replace with your icon
-        },
-      ],
-    },
+    title: "Breathing Coordination Exercise",
+    desc: "This exercise helps improve your breathing coordination, which is essential for managing stress and promoting relaxation.",
+      videoUrl: "path/to/your/video.mp4",
+  steps: [
+    {
+        title: "Step 1: Find a Comfortable Position",
+        desc: "Sit or lie down in a comfortable position. Ensure your back is straight, and your shoulders are relaxed.",
+        icon: <ArrowTrendingUpIcon />,
+      },
+      {
+        title: "Step 2: Inhale Deeply",
+        desc: "Take a deep breath in through your nose, allowing your abdomen to rise as your lungs fill with air.",
+        icon: <ArrowTrendingUpIcon />,
+      },
+      {
+        title: "Step 3: Exhale Slowly",
+        desc: "Slowly exhale through your mouth, letting your abdomen fall as you release the air.",
+        icon: <ArrowTrendingUpIcon />,
+      },
+      {
+        title: "Step 4: Repeat",
+        desc: "Repeat this breathing pattern for 5-10 minutes, focusing on smooth and controlled breaths.",
+        icon: <ArrowTrendingUpIcon />,
+      },
+    ],
+      },
     {
       imgPos: "right",
       title: "Breathing Technique 2",
@@ -344,5 +354,6 @@ const exerciseData = {
     },
   ],
 };
+
 
 export { benefitOne, benefitTwo ,quizData, results,exerciseData};
