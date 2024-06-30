@@ -272,77 +272,133 @@ const exerciseData = {
   techniques: [
     {
       imgPos: "left",
-      title: "Breathing Technique 1",
-      desc: "Description of Breathing Technique 1.",
-      videoUrl: "videos/Committoquit.mp4",
+      title: "Breathing Coordination Exercise",
+      desc: "This exercise helps improve your breathing coordination, which is essential for managing stress and promoting relaxation.",
+      videoUrl: "path/to/your/video.mp4",
       steps: [
-        {
-          title: "Step 1",
-          desc: "Description of step 1.",
-          icon: <ArrowTrendingUpIcon />, // Replace with your icon
-        },
-        {
-          title: "Step 2",
-          desc: "Description of step 2.",
-          icon: <ArrowTrendingUpIcon /> // Replace with your icon
-        },
+      {
+        title: "Step 1: Find a Comfortable Position",
+        desc: "Sit or lie down in a comfortable position. Ensure your back is straight, and your shoulders are relaxed.",
+        icon: <ArrowTrendingUpIcon />,
+      },
+      {
+        title: "Step 2: Inhale Deeply",
+        desc: "Take a deep breath in through your nose, allowing your abdomen to rise as your lungs fill with air.",
+        icon: <ArrowTrendingUpIcon />,
+      },
+      {
+        title: "Step 3: Exhale Slowly",
+        desc: "Slowly exhale through your mouth, letting your abdomen fall as you release the air.",
+        icon: <ArrowTrendingUpIcon />,
+      },
+      {
+        title: "Step 4: Repeat",
+        desc: "Repeat this breathing pattern for 5-10 minutes, focusing on smooth and controlled breaths.",
+        icon: <ArrowTrendingUpIcon />,
+      },
       ],
-    },
+      },
     {
       imgPos: "right",
-      title: "Breathing Technique 2",
-      desc: "Description of Breathing Technique 2.",
-      videoUrl: "videos/Committoquit.mp4",
-      steps: [
-        {
-          title: "Step 1",
-          desc: "Description of step 1.",
-          icon: <ArrowTrendingUpIcon />, // Replace with your icon
-        },
-        {
-          title: "Step 2",
-          desc: "Description of step 2.",
-          icon: <ArrowTrendingUpIcon />, // Replace with your icon
-        },
-      ],
+  title: "Diaphragmatic Breathing Exercise",
+  desc: "Diaphragmatic breathing, also known as abdominal or belly breathing, encourages full oxygen exchange. It's an effective technique for stress reduction and improved lung function.",
+  videoUrl: "path/to/your/video.mp4",
+  steps: [
+    {
+      title: "Step 1: Find a Comfortable Position",
+      desc: "Sit or lie down in a comfortable position. Ensure your back is straight and your shoulders are relaxed.",
+      icon: <ArrowTrendingUpIcon />,
+    },
+    {
+      title: "Step 2: Place One Hand on Your Chest and One on Your Abdomen",
+      desc: "This helps you feel your diaphragm move as you breathe.",
+      icon: <ArrowTrendingUpIcon />,
+    },
+    {
+      title: "Step 3: Inhale Slowly Through Your Nose",
+      desc: "Take a deep breath in through your nose, allowing your abdomen to rise while keeping your chest relatively still.",
+      icon: <ArrowTrendingUpIcon />,
+    },
+    {
+      title: "Step 4: Exhale Slowly Through Your Mouth",
+      desc: "Purse your lips and slowly exhale through your mouth, feeling your abdomen fall.",
+      icon: <ArrowTrendingUpIcon />,
+    },
+    {
+      title: "Step 5: Repeat",
+      desc: "Continue this breathing pattern for 5-10 minutes, focusing on smooth and controlled breaths.",
+      icon: <ArrowTrendingUpIcon />,
+    },
+  ],
     },
     {
       imgPos: "left",
-      title: "Breathing Technique 3",
-      desc: "Description of Breathing Technique 3.",
-      videoUrl: "videos/Committoquit.mp4",
-      steps: [
-        {
-          title: "Step 1",
-          desc: "Description of step 1.",
-          icon: <ArrowTrendingUpIcon />, // Replace with your icon
-        },
-        {
-          title: "Step 2",
-          desc: "Description of step 2.",
-          icon: <ArrowTrendingUpIcon />, // Replace with your icon
-        },
-      ],
+  title: "Pursed Lip Breathing Exercise",
+  desc: "Pursed lip breathing helps slow down your breathing rate, making each breath more effective. It's an effective technique for relieving shortness of breath and promoting relaxation.",
+  videoUrl: "path/to/your/video.mp4",
+  steps: [
+    {
+      title: "Step 1: Relax Your Neck and Shoulders",
+      desc: "Sit comfortably with your neck and shoulders relaxed.",
+      icon: <ArrowTrendingUpIcon />,
     },
     {
-      imgPos: "right",
-      title: "Breathing Technique 4",
-      desc: "Description of Breathing Technique 4.",
-      videoUrl: "videos/Committoquit.mp4",
-      steps: [
-        {
-          title: "Step 1",
-          desc: "Description of step 1.",
-          icon: <ArrowTrendingUpIcon />, // Replace with your icon
-        },
-        {
-          title: "Step 2",
-          desc: "Description of step 2.",
-          icon: <ArrowTrendingUpIcon />, // Replace with your icon
-        },
-      ],
+      title: "Step 2: Inhale Slowly Through Your Nose",
+      desc: "Breathe in slowly through your nose for a count of two.",
+      icon: <ArrowTrendingUpIcon />,
+    },
+    {
+      title: "Step 3: Pucker Your Lips",
+      desc: "Purse your lips as if you are about to blow out a candle.",
+      icon: <ArrowTrendingUpIcon />,
+    },
+    {
+      title: "Step 4: Exhale Slowly Through Your Pursed Lips",
+      desc: "Exhale slowly through your pursed lips for a count of four.",
+      icon: <ArrowTrendingUpIcon />,
+    },
+    {
+      title: "Step 5: Repeat",
+      desc: "Continue this breathing pattern for 5-10 minutes, focusing on smooth and controlled breaths.",
+      icon: <ArrowTrendingUpIcon />,
+    },
+  ],
+    },
+    {
+      imgPos: "left",
+  title: "Deep Breathing Exercise",
+  desc: "Deep breathing helps you relax, reduces stress, and increases the amount of oxygen in your blood. It's a simple and effective way to improve your overall well-being.",
+  videoUrl: "path/to/your/deep-breathing-video.mp4",
+  steps: [
+    {
+      title: "Step 1: Find a Comfortable Position",
+      desc: "Sit or lie down in a comfortable position, ensuring your back is straight.",
+      icon: <ArrowTrendingUpIcon />,
+    },
+    {
+      title: "Step 2: Inhale Deeply Through Your Nose",
+      desc: "Breathe in slowly and deeply through your nose for a count of four, allowing your abdomen to expand.",
+      icon: <ArrowTrendingUpIcon />,
+    },
+    {
+      title: "Step 3: Hold Your Breath",
+      desc: "Hold your breath for a count of four, keeping your body relaxed.",
+      icon: <ArrowTrendingUpIcon />,
+    },
+    {
+      title: "Step 4: Exhale Slowly Through Your Mouth",
+      desc: "Exhale slowly through your mouth for a count of six, allowing your body to relax with each breath.",
+      icon: <ArrowTrendingUpIcon />,
+    },
+    {
+      title: "Step 5: Repeat",
+      desc: "Repeat this process for 5-10 minutes, focusing on deep and controlled breaths.",
+      icon: <ArrowTrendingUpIcon />,
+    },
+  ],
     },
   ],
 };
+
 
 export { benefitOne, benefitTwo ,quizData, results,exerciseData};

@@ -25,7 +25,7 @@
 //           <source src={videoSrc} type="video/mp4" />
 //           Your browser does not support the video tag.
 //         </video>
-        
+
 //         <div className={`absolute inset-0 flex items-center justify-center ${hovered ? 'opacity-0' : 'opacity-100'}`}>
 //             <svg
 //               xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,6 @@
 //     </Container>
 //   );
 // }
-
 
 // "use client";
 // import { useState } from "react";
@@ -146,7 +145,7 @@ export function Video({ videoSrc }: Readonly<VideoProps>) {
 
   return (
     <Container>
-      <div className="relative w-full h-[500px] max-w-4xl mx-auto overflow-hidden lg:mb-20 rounded-2xl bg-green-300 cursor-pointer bg-gradient-to-tr from-purple-400 to-green-700">
+      <div className="relative w-full h-[500px] max-w-4xl mx-auto overflow-hidden  rounded-2xl bg-green-300 cursor-pointer bg-gradient-to-tr from-purple-400 to-green-700">
         <video
           ref={videoRef}
           autoPlay
