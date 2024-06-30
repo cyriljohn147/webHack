@@ -26,7 +26,7 @@ export const Navbar = () => {
                         className="w-16"
                       />
                     </span>
-                    <span>GreenLungs</span>
+                    <span>Green Lungs</span>
                   </span>
                 </Link>
 
