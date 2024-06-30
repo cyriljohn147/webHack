@@ -8,6 +8,7 @@ import {
   ChartBarIcon,
 } from "@heroicons/react/24/solid";
 import { UserData } from "@/types";
+import { getLatestUserData } from "../../../lib/frontend_functions";
 
 export default function Profile() {
   const [perc, setPerc] = useState(0);
@@ -15,6 +16,7 @@ export default function Profile() {
   const exponentialGrowthRate = 0.05; // Example exponential growth rate (5% per year)
   const yearsOfSmoking = 20; // Example years of smoking
   const cigarettesPerDay = 10; // Example cigarettes per day
+  // const [userData, setUserData] = useState<UserData>();
 
   function calculateLifeExpectancyReduction(
     baseFactor: number,
@@ -36,6 +38,16 @@ export default function Profile() {
   const userData: UserData = JSON.parse(
     window.localStorage.getItem("user") || "{}",
   );
+
+  // useEffect(() => {
+  //   const fetchUserData = async () => {
+  //     const user = await getLatestUserData();
+  //     console.log(user);
+  //     setUserData(user.data);
+  //   };
+  //
+  //   fetchUserData();
+  // }, []);
 
   return (
     <div>
@@ -79,7 +91,9 @@ export default function Profile() {
                 className="text-yellow-500"
               />
               <div>
-                <p className="text-5xl bold">{userData.stage}</p>
+                <p className="text-5xl bold">
+                  {userData === undefined ? "brr" : userData.stage}
+                </p>
                 <p className="text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
                   Stage
                 </p>
@@ -88,7 +102,9 @@ export default function Profile() {
             <div className="flex items-center px-5 pb-6 gap-2">
               <FireIcon width={100} height={100} className="text-red-500" />
               <div>
-                <p className="text-5xl bold">{userData.streak}</p>
+                <p className="text-5xl bold">
+                  {userData === undefined ? "brr" : userData.streak}
+                </p>
                 <p className="text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
                   Daily Streak
                 </p>
@@ -101,7 +117,9 @@ export default function Profile() {
                 className="text-green-800"
               />
               <div>
-                <p className="text-5xl bold">{userData.money}</p>
+                <p className="text-5xl bold">
+                  {userData === undefined ? "brr" : userData.money}
+                </p>
                 <p className="text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
                   Money Saved
                 </p>

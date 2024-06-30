@@ -34,31 +34,35 @@
 }
 
 .css-grqin-MuiButtonBase-root-MuiPickersDay-root-MuiDateRangePickerDay-day.Mui-selected {
-  background-color: var(--main-bg);
+  background-color: var(--main-bg) !important;
 }
 
 .css-1ny3jyh-MuiDateRangePickerDay-root {
-  background-color: rgb(220 252 231);
+  background-color: rgb(220 252 231) !important;
 }
 
 .css-1jt0kfk-MuiDateRangePickerDay-root {
-  background-color: rgb(220 252 231);
+  background-color: rgb(220 252 231) !important;
 }
 
 .css-f8wito-MuiDateRangePickerDay-root {
-  background-color: rgb(220 252 231);
+  background-color: rgb(220 252 231) !important;
 }
 
 .css-grqin-MuiButtonBase-root-MuiPickersDay-root-MuiDateRangePickerDay-day:focus {
-  background-color: rgba(220, 252, 231, 0.6);
+  background-color: rgba(220, 252, 231, 0.6) !important;
 }
 
 .css-grqin-MuiButtonBase-root-MuiPickersDay-root-MuiDateRangePickerDay-day.Mui-selected:hover {
-  background-color: rgb(21 128 61);
+  background-color: rgb(21 128 61) !important;
 }
 
 .css-grqin-MuiButtonBase-root-MuiPickersDay-root-MuiDateRangePickerDay-day:focus.Mui-selected {
-  background-color: rgb(22 101 52);
+  background-color: rgb(22 101 52) !important;
+}
+
+.css-1h9r93t-MuiButtonBase-root-MuiPickersDay-root-MuiDateRangePickerDay-day.Mui-selected {
+  background-color: rgb(21 128 61) !important;
 }
 
 .progress-ring__circle {

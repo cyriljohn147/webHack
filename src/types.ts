@@ -22,9 +22,15 @@ export type UserData = {
   id: string;
   email: string;
   password: string;
-  dates: string;
+  dates: unknown;
   streak: number;
   money: number;
   stage: number;
   latestDate: Date;
+};
+
+export type UserResponse = {
+  message: string;
+  type: string;
+  data?: UserData | undefined;
 };
