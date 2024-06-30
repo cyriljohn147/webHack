@@ -272,11 +272,11 @@ const exerciseData = {
   techniques: [
     {
       imgPos: "left",
-    title: "Breathing Coordination Exercise",
-    desc: "This exercise helps improve your breathing coordination, which is essential for managing stress and promoting relaxation.",
+      title: "Breathing Coordination Exercise",
+      desc: "This exercise helps improve your breathing coordination, which is essential for managing stress and promoting relaxation.",
       videoUrl: "path/to/your/video.mp4",
-  steps: [
-    {
+      steps: [
+      {
         title: "Step 1: Find a Comfortable Position",
         desc: "Sit or lie down in a comfortable position. Ensure your back is straight, and your shoulders are relaxed.",
         icon: <ArrowTrendingUpIcon />,
@@ -296,7 +296,7 @@ const exerciseData = {
         desc: "Repeat this breathing pattern for 5-10 minutes, focusing on smooth and controlled breaths.",
         icon: <ArrowTrendingUpIcon />,
       },
-    ],
+      ],
       },
     {
       imgPos: "right",
