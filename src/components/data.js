@@ -298,7 +298,7 @@ const exerciseData = {
       imgPos: "right",
       title: "Diaphragmatic Breathing Exercise",
       desc: "Diaphragmatic breathing, also known as abdominal or belly breathing, encourages full oxygen exchange. It's an effective technique for stress reduction and improved lung function.",
-      videoUrl: "/videos/Dipragmatic.mp4",
+      videoUrl: "/videos/Diaphragmatic.mp4",
       steps: [
         {
           title: "Step 1: Find a Comfortable Position",
