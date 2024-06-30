@@ -8,7 +8,6 @@ import {
   ChartBarIcon,
 } from "@heroicons/react/24/solid";
 import { UserData } from "@/types";
-import { getLatestUserData } from "../../../lib/frontend_functions";
 
 export default function Profile() {
   const [perc, setPerc] = useState(0);

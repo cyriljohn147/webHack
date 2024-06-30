@@ -39,9 +39,8 @@ const Home = ({ quizzes, setQuizData, stage }: HomeProps) => {
               return (
                 <a
                   key={quiz.title}
-                  className={`flex h-16 cursor-pointer items-center gap-4 rounded-xl ${
-                    index === stage ? "bg-green-600" : "bg-white"
-                  } p-3 drop-shadow-sm transition-all duration-200 ease-in-out hover:opacity-75 dark:bg-navy sm:h-20 sm:gap-8 sm:rounded-3xl xl:h-24 xl:w-[564px] xl:p-5`}
+                  className={`flex h-16 cursor-pointer items-center gap-4 rounded-xl ${index === stage - 1 ? "bg-green-600" : "bg-white"
+                    } p-3 drop-shadow-sm transition-all duration-200 ease-in-out hover:opacity-75 dark:bg-navy sm:h-20 sm:gap-8 sm:rounded-3xl xl:h-24 xl:w-[564px] xl:p-5`}
                   onClick={() => {
                     handleSelectedQuiz(quiz);
                     setView("quiz");
