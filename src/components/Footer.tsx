@@ -4,7 +4,7 @@ import React from "react";
 import { Container } from "@/components/Container";
 
 export function Footer() {
-  const navigation = [ "Features", "Company", "Blog"];
+  const navigation = ["Features", "Company", "Blog"];
   const legal = ["Terms", "Privacy", "Legal"];
   return (
     <div className="relative">
@@ -34,7 +34,7 @@ export function Footer() {
               And its completely open-source.
             </div> */}
 
-            <div className="mt-5">
+            {/* <div className="mt-5">
               <a
                 href="https://vercel.com/?utm_source=web3templates&utm_campaign=oss"
                 target="_blank"
@@ -48,7 +48,7 @@ export function Footer() {
                   height="44"
                 />
               </a>
-            </div>
+            </div> */}
           </div>
 
           <div>

@@ -209,7 +209,7 @@ const quizData={
   ]
 }
 
-const results={
+const results = {
   "Results": [
     {
       "title": "Stage 1: Considering Quitting",
@@ -217,6 +217,11 @@ const results={
         "You're starting to learn about the risks of smoking. Keep exploring why quitting is important.",
         "You understand the immediate benefits and common reasons to quit. Keep building on this knowledge.",
         "You grasp the health risks and benefits of quitting. You're ready to take steps toward a smoke-free life."
+      ],
+      "rewards": [
+        "Access to educational resources",
+        "Personalized quit plan",
+        "10% off coupon for smoking cessation aids"
       ]
     },
     {
@@ -225,6 +230,11 @@ const results={
         "Managing cravings and staying motivated can be challenging. Use our strategies and support resources.",
         "You're effectively handling cravings and staying active. Keep using available support to enhance your journey.",
         "You have a strong strategy for managing cravings and motivation. Keep applying these methods and seeking support."
+      ],
+      "rewards": [
+        "Group therapy sessions",
+        "Personalized quit plan with behavioral strategies",
+        "20% off voucher for nicotine replacement therapy products"
       ]
     },
     {
@@ -233,6 +243,11 @@ const results={
         "Early days can be tough. Focus on managing withdrawal symptoms and staying motivated.",
         "You understand handling withdrawal symptoms and staying motivated. Set new health goals and celebrate progress.",
         "You manage withdrawal well and stay motivated. Enjoy the health benefits of being smoke-free."
+      ],
+      "rewards": [
+        "Individual counseling sessions",
+        "$50 gift card for wellness products",
+        "Free access to a fitness app for 6 months"
       ]
     },
     {
@@ -241,11 +256,17 @@ const results={
         "Maintaining a smoke-free life can be challenging. Focus on identifying triggers and seeking support.",
         "You're maintaining your smoke-free life well. Identify triggers and celebrate milestones.",
         "You're doing an amazing job! Celebrate milestones and use what you've learned to prevent relapse."
+      ],
+      "rewards": [
+        "Relapse prevention plan",
+        "$100 voucher for a wellness retreat",
+        "1-year subscription to a meditation app"
       ]
     }
   ]
+};
 
-}
+
 
 const exerciseData = {
   techniques: [
