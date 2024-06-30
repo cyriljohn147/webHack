@@ -36,12 +36,15 @@
     "dayjs": "^1.11.11",
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.31.2",
+    "net": "^1.0.2",
     "next": "14.2.3",
     "next-themes": "^0.3.0",
+    "perf_hooks": "^0.0.1",
     "postgres": "^3.4.4",
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.51.4",
+    "tls": "^0.0.1",
     "yarn": "^1.22.22"
   },
   "devDependencies": {

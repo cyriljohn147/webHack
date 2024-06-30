@@ -1,25 +1,7 @@
+"use server";
 import { UserTable } from "../backend/drizzle/schema";
 import { db } from "../backend/drizzle/db";
 import { eq } from "drizzle-orm";
-
-// export const registerDoctor = async (doctor: Doctor) => {
-//   try {
-//     const { data } = await axios.post(
-//       `${config.api_url}/${config.v}/doctor/register`,
-//       doctor,
-//       {
-//         headers: {
-//           "Content-Type": "application/json",
-//         },
-//       },
-//     );
-//     return { message: data.message, type: "success", data: data };
-//   } catch (e) {
-//     console.log(e);
-//     return { message: "Invalid Credentials", type: "error" };
-//   }
-// };
-//
 
 export const registerUser = async (
   email: string,

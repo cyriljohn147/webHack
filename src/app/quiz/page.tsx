@@ -12,7 +12,8 @@ function App() {
     icon: "/treeSapling.svg",
     iconbg: "#fne4bc",
   });
-  const [stage, setStage] = useState<number>(0);
+  const stage =
+    JSON.parse(window.localStorage.getItem("user") || "{}").stage - 1;
 
   return (
     <>

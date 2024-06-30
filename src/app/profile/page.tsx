@@ -7,6 +7,7 @@ import {
   BanknotesIcon,
   ChartBarIcon,
 } from "@heroicons/react/24/solid";
+import { UserData } from "@/types";
 
 export default function Profile() {
   const [perc, setPerc] = useState(0);
@@ -19,8 +20,11 @@ export default function Profile() {
     baseFactor: number,
     exponentialGrowthRate: number,
     yearsOfSmoking: number,
-    cigarettesPerDay: number
+    cigarettesPerDay: number,
   ) {
+    if (cigarettesPerDay < 0 || isNaN(cigarettesPerDay)) {
+      return;
+    }
     const lifeExpectancyReduction =
       baseFactor *
       Math.pow(1 + exponentialGrowthRate, yearsOfSmoking) *
@@ -29,11 +33,15 @@ export default function Profile() {
     setPerc(lifeExpectancyReduction);
   }
 
+  const userData: UserData = JSON.parse(
+    window.localStorage.getItem("user") || "{}",
+  );
+
   return (
     <div>
       <Container className="justify-around flex flex-col items-center height">
-        <div className="bg-white dark:bg-gray-900 rounded-lg overflow-hidden w-full flex ">
-          <div className="border-b px-4 pb-6">
+        <div className="bg-white dark:bg-gray-900 rounded-lg overflow-hidden w-full flex">
+          <div className="px-4 pb-6">
             <div className="text-center my-4">
               <img
                 className="h-32 w-32 rounded-full border-4 border-white dark:border-gray-800 mx-auto my-4"
@@ -64,59 +72,65 @@ export default function Profile() {
             </div>
           </div>
           <div className="w-full flex justify-around">
-            <div className="flex items-center px-5 pb-10">
+            <div className="flex items-center px-5 pb-6 gap-2">
               <ChartBarIcon
                 width={100}
                 height={100}
                 className="text-yellow-500"
               />
               <div>
-                <p className="text-5xl bold">1</p>
-                <p>Stage</p>
+                <p className="text-5xl bold">{userData.stage}</p>
+                <p className="text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
+                  Stage
+                </p>
               </div>
             </div>
-            <div className="flex items-center px-5 pb-10">
+            <div className="flex items-center px-5 pb-6 gap-2">
               <FireIcon width={100} height={100} className="text-red-500" />
               <div>
-                <p className="text-5xl bold">19</p>
-                <p>daily streak</p>
+                <p className="text-5xl bold">{userData.streak}</p>
+                <p className="text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
+                  Daily Streak
+                </p>
               </div>
             </div>
-            <div className="flex items-center px-5 pb-10">
+            <div className="flex items-center px-5 pb-6 gap-2">
               <BanknotesIcon
                 width={100}
                 height={100}
                 className="text-green-800"
               />
               <div>
-                <p className="text-5xl bold">190</p>
-                <p>Money Saved</p>
+                <p className="text-5xl bold">{userData.money}</p>
+                <p className="text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
+                  Money Saved
+                </p>
               </div>
             </div>
           </div>
         </div>
         <div className="flex justify-center gap-10">
-          <div className="w-1/4 h-80 flex *: justify-around items-center rounded px-5">
+          <div className="w-1/4 h-80 flex flex-col-reverse *: justify-around items-center rounded px-5">
             <div>
               <form
-                className="flex flex-col"
+                className="flex items-end"
                 onSubmit={(e: any) => {
                   e.preventDefault();
                   calculateLifeExpectancyReduction(
                     baseFactor,
                     exponentialGrowthRate,
                     yearsOfSmoking,
-                    parseInt(e.target.intake.value)
+                    parseInt(e.target.intake.value),
                   );
                 }}
               >
-                <div className="mt-10">
+                <div>
                   <div className="sm:col-span-4">
                     <label
                       htmlFor="username"
-                      className="block text-sm font-medium leading-6 text-gray-900"
+                      className="block text-md text-nowrap font-medium leading-6 text-gray-900"
                     >
-                      Enter your Daily intake:
+                      Enter your Daily Intake:
                     </label>
                     <div className="mt-2">
                       <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset sm:max-w-md">
@@ -130,7 +144,7 @@ export default function Profile() {
                     </div>
                   </div>
                 </div>
-                <div className="mt-6 flex items-center px-5  justify-center gap-x-6">
+                <div className="flex items-center px-5  justify-center gap-x-6">
                   <button
                     type="submit"
                     className="rounded-md bg-green-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
@@ -167,7 +181,7 @@ export default function Profile() {
                 <text
                   x={50}
                   y={50}
-                  fontFamily="Verdana"
+                  // fontFamily="Verdana"
                   fontSize={12}
                   textAnchor="middle"
                   alignmentBaseline="middle"
@@ -177,8 +191,11 @@ export default function Profile() {
               </svg>
             </div>
           </div>
-          <div className="w-1/4 h-80 rounded bg-green-600 flex items-center justify-center px-5">
-            <p className="italic text-white text-center">
+          <div className="w-1/2 h-80 rounded items-center justify-center px-5 text-left">
+            <h3 className="max-w-2xl mt-10 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
+              Why shouldn't I smoke?
+            </h3>
+            <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
               Non-smokers exposed to secondhand smoke have a 20-30% higher risk
               of developing lung cancer. Since lung cancer is one of the most
               deadly forms of cancer, this increased risk translates to a

@@ -39,10 +39,10 @@ async function main() {
   //     set: { name: "Updated Name" },
   //   });
   const user = await authenticateUser("john.doe@example.com", "password123");
-  const id = user.data?.id;
-  const msg = await updateUser({ money: 999 }, id as string);
+  // const id = user.data?.id;
+  // const msg = await updateUser({ money: 999 }, id as string);
 
-  console.log(user, msg);
+  console.log(user);
 }
 
 main();

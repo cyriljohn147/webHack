@@ -1,8 +1,38 @@
 "use client";
 
 import { Container } from "@/components/Container";
+import { useState } from "react";
+import { authenticateUser } from "../../../lib/frontend_functions";
+import { Router } from "next/router";
 
 export default function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [remember, setRemember] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+    if (!email || !password) {
+      setError("Please fill in all fields");
+      return;
+    }
+    setError("");
+
+    try {
+      const res = await authenticateUser(email, password);
+      setError(res.message);
+      if (res.type === "success") {
+        window.localStorage.setItem("user", JSON.stringify(res.data));
+        window.location.href = "/profile";
+      }
+      console.log(res);
+    } catch (e) {
+      console.error(e);
+      setError("An error occurred. Please try again.");
+    }
+  };
+
   return (
     <Container className="flex flex-wrap">
       <section
@@ -15,7 +45,7 @@ export default function Login() {
               <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                 Login to your account
               </h1>
-              <form className="space-y-4 md:space-y-6" action="#">
+              <form className="space-y-4 md:space-y-6" onSubmit={handleSubmit}>
                 <div>
                   <label
                     htmlFor="email"
@@ -30,6 +60,8 @@ export default function Login() {
                     className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="name@company.com"
                     required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
                 <div>
@@ -46,6 +78,8 @@ export default function Login() {
                     placeholder="••••••••"
                     className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     required
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                   />
                 </div>
                 <div className="flex items-center justify-between">
@@ -56,7 +90,8 @@ export default function Login() {
                         aria-describedby="remember"
                         type="checkbox"
                         className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"
-                        required
+                        checked={remember}
+                        onChange={(e) => setRemember(e.target.checked)}
                       />
                     </div>
                     <div className="ml-3 text-sm">
@@ -69,7 +104,7 @@ export default function Login() {
                     </div>
                   </div>
                   <a
-                    href="#"
+                    href="/"
                     className="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500"
                   >
                     Forgot password?

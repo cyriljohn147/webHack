@@ -15,5 +15,16 @@ export type Quiz = {
 export type Quizzes = Quiz[];
 
 export type Exercise = {
-  title : string;
-}
+  title: string;
+};
+
+export type UserData = {
+  id: string;
+  email: string;
+  password: string;
+  dates: string;
+  streak: number;
+  money: number;
+  stage: number;
+  latestDate: Date;
+};

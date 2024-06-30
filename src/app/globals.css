@@ -67,6 +67,10 @@
   transform-origin: 50% 50%;
 }
 
-.height{
+.height {
   height: 70vh;
+}
+
+#intake:focus-visible {
+  outline-color: transparent;
 }
