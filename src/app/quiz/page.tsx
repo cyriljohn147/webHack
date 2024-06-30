@@ -9,8 +9,8 @@ function App() {
   const quizzes: Quizzes = quizData.quizzes;
   const [data, setQuizData] = useState<Quiz>({
     title: "Healthy lifestyle is a choice!",
-    icon: "/",
-    iconbg: "#16a34a",
+    icon: "/treeSapling.svg",
+    iconbg: "#fne4bc",
   });
 
   return (

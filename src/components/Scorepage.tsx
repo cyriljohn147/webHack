@@ -61,12 +61,22 @@ const ScorePage = ({
         </div>
       </section>
       <section className="p-5">
-        <p className="text-center italic">{results.Results.map((res,index)=>{
-          if(res.title === quiz.title){
-            return <p key={index}>{res.message[score ===  0 ? 0 :
-               score-1]}</p>;
-          }
-        })}</p>
+        <p className="text-center ">
+          {results.Results.map((res, index) => {
+            if (res.title === quiz.title) {
+              return (
+                <div>
+                  <p key={index} className="italic">
+                    {res.message[score === 0 ? 0 : score - 1]}
+                  </p>
+                  <p key={index} className="font-bold">
+                    {res.rewards[score === 0 ? 0 : score - 1]}
+                  </p>
+                </div>
+              );
+            }
+          })}
+        </p>
       </section>
     </div>
   );

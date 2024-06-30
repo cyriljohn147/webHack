@@ -7,8 +7,15 @@ import { DateRangeCalendar } from "@mui/x-date-pickers-pro/DateRangeCalendar";
 import dayjs, { Dayjs } from "dayjs";
 import CheckMark from "@/components/CheckMark";
 import Fire from "@/components/Fire";
+import { useState } from "react";
 
 export default function Streak() {
+  const [curDate, setCurDate] = useState<Date>(new Date("2022-06-21"));
+
+  const getStreakDate = () => {
+    return dayjs(curDate).add(19, "day");
+  };
+
   return (
     <Container className="flex flex-wrap ">
       <div className="w-1/2 flex justify-center items-center">
@@ -42,7 +49,7 @@ export default function Streak() {
             <DemoContainer components={["DateRangeCalendar"]}>
               <DemoItem>
                 <DateRangeCalendar
-                  defaultValue={[dayjs("2022-04-17"), dayjs("2022-04-21")]}
+                  defaultValue={[dayjs(curDate), getStreakDate()]}
                   readOnly
                 />
               </DemoItem>
