@@ -41,7 +41,9 @@ export default function Profile() {
                 alt=""
               />
               <div className="py-2">
-                <h3 className="font-bold text-2xl text-gray-800 dark:text-white mb-1"></h3>
+                <h3 className="font-bold text-2xl text-gray-800 dark:text-white mb-1">
+                  Jane Doe
+                </h3>
                 <div className="inline-flex text-gray-700 dark:text-gray-300 items-center">
                   <svg
                     className="h-5 w-5 text-gray-400 dark:text-gray-600 mr-1"
@@ -59,14 +61,6 @@ export default function Profile() {
                   Boduppal , HYD
                 </div>
               </div>
-            </div>
-            <div className="flex gap-2 px-2">
-              <button className="flex-1 rounded-full bg-green-600 dark:bg-green-800 text-white dark:text-white antialiased font-bold hover:bg-green-800 dark:hover:bg-green-900 px-4 py-2">
-                Follow
-              </button>
-              <button className="flex-1 rounded-full border-2 border-gray-400 dark:border-gray-700 font-semibold text-black dark:text-white px-4 py-2">
-                Message
-              </button>
             </div>
           </div>
           <div className="w-full flex justify-around">

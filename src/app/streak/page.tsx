@@ -11,6 +11,7 @@ import { useState } from "react";
 
 export default function Streak() {
   const [curDate, setCurDate] = useState<Date>(new Date("2022-06-21"));
+  const [stage, setStage] = useState<number>(0);
 
   const getStreakDate = () => {
     return dayjs(curDate).add(19, "day");
@@ -19,7 +20,10 @@ export default function Streak() {
   return (
     <Container className="flex flex-wrap ">
       <div className="w-1/2 flex justify-center items-center">
-        <img className="w-1/2" src="treeSapling.svg"></img>
+        {stage === 0 && <img className="w-1/2" src="treeSapling.svg"></img>}
+        {stage === 1 && <img className="w-1/2" src="secondStage.svg"></img>}
+        {stage === 2 && <img className="w-1/2" src="thirdStage.svg"></img>}
+        {stage === 3 && <img className="w-1/2" src="fourthStage.svg"></img>}
       </div>
       <div className="w-1/2">
         <div className="streak flex flex-col justify-center items-center my-4">
